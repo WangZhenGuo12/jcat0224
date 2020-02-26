@@ -1,7 +1,6 @@
 package com.wzg.jcatadminstrationback.dto.in;
 
 public class ReturnUpdateActionInDTO {
-
     private Integer returnId;
     private Byte action;
 

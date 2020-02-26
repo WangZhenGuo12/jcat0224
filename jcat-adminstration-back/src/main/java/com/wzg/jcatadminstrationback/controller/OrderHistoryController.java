@@ -11,7 +11,6 @@ import java.util.List;
 public class OrderHistoryController {
 
 
-
     @GetMapping("/getListByOrderId")
     public List<OrderHistoryListOutDTO> getListByOrderId(@RequestParam Long orderId){
         return null;
@@ -21,4 +20,5 @@ public class OrderHistoryController {
     public Integer create(@RequestBody OrderHistoryCreateInDTO orderHistoryCreateInDTO){
         return null;
     }
+
 }

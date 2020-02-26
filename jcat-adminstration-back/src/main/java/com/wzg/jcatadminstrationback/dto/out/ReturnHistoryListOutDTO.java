@@ -1,8 +1,6 @@
 package com.wzg.jcatadminstrationback.dto.out;
 
 public class ReturnHistoryListOutDTO {
-
-
     private Integer returnHistoryId;
     private Long timestamp;
     private Byte returnStatus;

@@ -1,7 +1,6 @@
 package com.wzg.jcatadminstrationback.dto.in;
 
 public class CustomerSearchInDTO {
-
     private String username;
     private String realName;
     private String mobile;

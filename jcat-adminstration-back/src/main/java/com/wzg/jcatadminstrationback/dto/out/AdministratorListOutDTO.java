@@ -1,8 +1,6 @@
 package com.wzg.jcatadminstrationback.dto.out;
 
 public class AdministratorListOutDTO {
-
-
     private Integer administratorId;
     private String username;
     private Byte status;

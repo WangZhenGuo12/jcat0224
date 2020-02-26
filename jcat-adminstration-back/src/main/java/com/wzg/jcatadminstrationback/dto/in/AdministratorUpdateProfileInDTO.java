@@ -1,7 +1,6 @@
 package com.wzg.jcatadminstrationback.dto.in;
 
 public class AdministratorUpdateProfileInDTO {
-
     private String realName;
     private String email;
     private String avatarUrl;

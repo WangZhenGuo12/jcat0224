@@ -1,7 +1,6 @@
 package com.wzg.jcatadminstrationback.dto.in;
 
 public class ReturnSearchInDTO {
-
     private Integer returnId;
     private Long orderId;
     private String customerName;

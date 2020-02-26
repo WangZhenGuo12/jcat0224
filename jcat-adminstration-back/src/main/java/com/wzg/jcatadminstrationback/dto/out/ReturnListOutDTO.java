@@ -1,7 +1,6 @@
 package com.wzg.jcatadminstrationback.dto.out;
 
 public class ReturnListOutDTO {
-
     private Integer returnId;
     private Long orderId;
     private Integer customerId;

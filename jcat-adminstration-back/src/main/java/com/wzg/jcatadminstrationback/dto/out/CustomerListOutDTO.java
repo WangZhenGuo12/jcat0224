@@ -1,8 +1,6 @@
 package com.wzg.jcatadminstrationback.dto.out;
 
 public class CustomerListOutDTO {
-
-
     private Integer customerId;
     private String username;
     private String realName;
@@ -10,7 +8,6 @@ public class CustomerListOutDTO {
     private String email;
     private Byte status;
     private Long createTimestamp;
-
 
     public Integer getCustomerId() {
         return customerId;

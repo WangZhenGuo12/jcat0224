@@ -1,13 +1,14 @@
 package com.wzg.jcatadminstrationback.controller;
 
-import com.wzg.jcatadminstrationback.dto.in.CustomerSearchInDTO;
+
+import com.wzg.jcatadminstrationback.dto.in.*;
 import com.wzg.jcatadminstrationback.dto.out.CustomerListOutDTO;
 import com.wzg.jcatadminstrationback.dto.out.CustomerShowOutDTO;
 import com.wzg.jcatadminstrationback.dto.out.PageOutDTO;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/costomer")
+@RequestMapping("/customer")
 public class CustomerController {
 
     @GetMapping("/search")
@@ -25,5 +26,7 @@ public class CustomerController {
     public void disable(@RequestParam Integer customerId){
 
     }
+
+
 
 }

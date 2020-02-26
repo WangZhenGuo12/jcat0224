@@ -1,7 +1,6 @@
 package com.wzg.jcatadminstrationback.dto.out;
 
 public class ReturnShowOutDTO {
-
     private Integer returnId;
     private Long orderId;
     private Long orderTimestamp;
@@ -19,7 +18,6 @@ public class ReturnShowOutDTO {
     private String comment;
     private Long createTimestamp;
     private Long updateTimestamp;
-
 
     public Integer getReturnId() {
         return returnId;

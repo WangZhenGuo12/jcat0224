@@ -1,7 +1,6 @@
 package com.wzg.jcatadminstrationback.dto.out;
 
 public class AdministratorGetProfileOutDTO {
-
     private Integer administratorId;
     private String username;
     private String realName;

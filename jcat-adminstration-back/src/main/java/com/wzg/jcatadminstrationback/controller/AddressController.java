@@ -16,6 +16,4 @@ public class AddressController {
     public List<AddressListOutDTO> getListByCustomerId(@RequestParam Integer customerId){
         return null;
     }
-
-
 }

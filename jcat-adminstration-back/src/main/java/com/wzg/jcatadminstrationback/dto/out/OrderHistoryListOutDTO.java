@@ -1,14 +1,11 @@
 package com.wzg.jcatadminstrationback.dto.out;
 
 public class OrderHistoryListOutDTO {
-
-
     private Long orderHistoryId;
     private Long timestamp;
     private Byte orderStatus;
     private String comment;
     private Boolean customerNotified;
-
 
     public Long getOrderHistoryId() {
         return orderHistoryId;

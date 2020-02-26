@@ -3,7 +3,6 @@ package com.wzg.jcatadminstrationback.dto.out;
 import java.util.List;
 
 public class OrderShowOutDTO {
-
     private Long orderId;
     private Integer customerId;
     private Byte status;
@@ -19,7 +18,6 @@ public class OrderShowOutDTO {
     private Double invoicePrice;
     private String comment;
     private List<OrderProductShowOutDTO> orderProducts;
-
 
     public Long getOrderId() {
         return orderId;

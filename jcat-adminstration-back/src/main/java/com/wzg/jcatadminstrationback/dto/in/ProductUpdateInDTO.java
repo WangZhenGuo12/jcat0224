@@ -2,8 +2,8 @@ package com.wzg.jcatadminstrationback.dto.in;
 
 import java.util.List;
 
-public class ProductUpdateInDTO {
 
+public class ProductUpdateInDTO {
     private Integer productId;
     private String productName;
     private Double price;
@@ -15,7 +15,6 @@ public class ProductUpdateInDTO {
     private Integer sortOrder;
     private String description;
     private List<String> otherPicUrls;
-
 
     public Integer getProductId() {
         return productId;

@@ -16,7 +16,6 @@ public class ProductShowOutDTO {
     private String description;
     private List<String> otherPicUrls;
 
-
     public Integer getProductId() {
         return productId;
     }

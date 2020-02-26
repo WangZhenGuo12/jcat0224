@@ -1,7 +1,6 @@
 package com.wzg.jcatadminstrationback.dto.out;
 
 public class AddressListOutDTO {
-
     private Integer addressId;
     private String receiverName;
     private String receiverMobile;

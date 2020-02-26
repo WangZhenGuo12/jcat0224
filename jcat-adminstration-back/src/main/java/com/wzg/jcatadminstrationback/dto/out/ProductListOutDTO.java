@@ -1,7 +1,6 @@
 package com.wzg.jcatadminstrationback.dto.out;
 
 public class ProductListOutDTO {
-
     private Integer productId;
     private String productCode;
     private String productName;
@@ -10,7 +9,6 @@ public class ProductListOutDTO {
     private Integer stockQuantity;
     private Byte status;
     private String mainPicUrl;
-
 
     public Integer getProductId() {
         return productId;

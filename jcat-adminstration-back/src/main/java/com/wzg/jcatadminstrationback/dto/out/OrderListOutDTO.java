@@ -1,7 +1,6 @@
 package com.wzg.jcatadminstrationback.dto.out;
 
 public class OrderListOutDTO {
-
     private Long orderId;
     private Integer customerId;
     private String customerName;
@@ -10,13 +9,6 @@ public class OrderListOutDTO {
     private Long createTimestamp;
     private Long updateTimestamp;
 
-    public Long getOrderId() {
-        return orderId;
-    }
-
-    public void setOrderId(Long orderId) {
-        this.orderId = orderId;
-    }
 
     public Integer getCustomerId() {
         return customerId;
@@ -26,12 +18,12 @@ public class OrderListOutDTO {
         this.customerId = customerId;
     }
 
-    public Byte getStatus() {
-        return status;
+    public String getCustomerName() {
+        return customerName;
     }
 
-    public void setStatus(Byte status) {
-        this.status = status;
+    public void setCustomerName(String customerName) {
+        this.customerName = customerName;
     }
 
     public Double getTotalPirce() {
@@ -58,11 +50,19 @@ public class OrderListOutDTO {
         this.updateTimestamp = updateTimestamp;
     }
 
-    public String getCustomerName() {
-        return customerName;
+    public Byte getStatus() {
+        return status;
     }
 
-    public void setCustomerName(String customerName) {
-        this.customerName = customerName;
+    public void setStatus(Byte status) {
+        this.status = status;
+    }
+
+    public Long getOrderId() {
+        return orderId;
+    }
+
+    public void setOrderId(Long orderId) {
+        this.orderId = orderId;
     }
 }

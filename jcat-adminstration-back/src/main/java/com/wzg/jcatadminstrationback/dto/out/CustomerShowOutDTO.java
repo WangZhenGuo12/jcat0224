@@ -1,7 +1,6 @@
 package com.wzg.jcatadminstrationback.dto.out;
 
 public class CustomerShowOutDTO {
-
     private Integer customerId;
     private String username;
     private String realName;
@@ -13,7 +12,6 @@ public class CustomerShowOutDTO {
     private Boolean newsSubscribed;
     private Integer rewordPoints;
     private Integer defaultAddressId;
-
 
     public Integer getCustomerId() {
         return customerId;

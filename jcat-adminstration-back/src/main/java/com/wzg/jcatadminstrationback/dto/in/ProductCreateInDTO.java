@@ -3,8 +3,6 @@ package com.wzg.jcatadminstrationback.dto.in;
 import java.util.List;
 
 public class ProductCreateInDTO {
-
-
     private String productCode;
     private String productName;
     private Double price;
@@ -16,7 +14,6 @@ public class ProductCreateInDTO {
     private Integer sortOrder;
     private String description;
     private List<String> otherPicUrls;
-
 
     public String getProductCode() {
         return productCode;

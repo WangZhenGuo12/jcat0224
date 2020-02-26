@@ -1,14 +1,12 @@
 package com.wzg.jcatadminstrationback.dto.out;
 
 public class OrderProductShowOutDTO {
-
     private Integer productId;
     private String productCode;
     private String productName;
     private Integer quantity;
     private Double unitPrice;
     private Integer unitRewordPoints;
-
 
     public Integer getProductId() {
         return productId;
