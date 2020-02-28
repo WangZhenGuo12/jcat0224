@@ -1,6 +1,7 @@
 package com.wzg.jcatstoreback.dao;
 
 import com.wzg.jcatstoreback.po.Customer;
+import org.apache.ibatis.annotations.Param;
 
 
 public interface CustomerMapper {
@@ -15,4 +16,8 @@ public interface CustomerMapper {
     int updateByPrimaryKeySelective(Customer record);
 
     int updateByPrimaryKey(Customer record);
+
+
+
+    Customer selectByUsername(@Param("username") String username);
 }
