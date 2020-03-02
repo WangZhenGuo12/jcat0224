@@ -1,6 +1,9 @@
 package com.wzg.jcatstoreback.dao;
 
 import com.wzg.jcatstoreback.po.Address;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 
 public interface AddressMapper {
@@ -15,4 +18,8 @@ public interface AddressMapper {
     int updateByPrimaryKeySelective(Address record);
 
     int updateByPrimaryKey(Address record);
+
+//    custom
+
+    List<Address> selectByCustomerId(@Param("customerId") Integer customerId);
 }

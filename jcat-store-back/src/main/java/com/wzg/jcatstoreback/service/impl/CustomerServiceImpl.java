@@ -7,10 +7,12 @@ import com.wzg.jcatstoreback.enumeration.CustomerStatus;
 import com.wzg.jcatstoreback.po.Customer;
 import com.wzg.jcatstoreback.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.Date;
+@Service
+public class CustomerServiceImpl implements CustomerService  {
 
-public class CustomerServiceImpl implements CustomerService {
     @Autowired
     private CustomerMapper customerMapper;
 
@@ -52,7 +54,15 @@ public class CustomerServiceImpl implements CustomerService {
     }
 
     @Override
+    public Customer getByEmail(String email) {
+        Customer customer = customerMapper.selectByEmail(email);
+        return customer;
+    }
+
+    @Override
     public void update(Customer customer) {
         customerMapper.updateByPrimaryKeySelective(customer);
     }
+
+
 }
