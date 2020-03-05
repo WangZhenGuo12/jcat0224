@@ -1,6 +1,7 @@
 package com.wzg.jcatadminstrationback.dto.in;
 
 public class OrderHistoryCreateInDTO {
+
     private Long orderId;
     private Byte orderStatus;
     private String comment;
@@ -37,4 +38,6 @@ public class OrderHistoryCreateInDTO {
     public void setCustomerNotified(Boolean customerNotified) {
         this.customerNotified = customerNotified;
     }
+
+
 }

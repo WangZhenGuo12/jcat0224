@@ -1,12 +1,14 @@
 package com.wzg.jcatadminstrationback.controller;
 
 
+import com.github.pagehelper.Page;
 import com.wzg.jcatadminstrationback.constant.ClientExceptionConstant;
+import com.wzg.jcatadminstrationback.dto.in.OrderSearchInDTO;
+import com.wzg.jcatadminstrationback.dto.out.*;
 import com.wzg.jcatadminstrationback.exception.ClientException;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import com.wzg.jcatadminstrationback.service.OrderService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.FileOutputStream;
@@ -17,29 +19,41 @@ import java.util.UUID;
 
 @RestController
 @RequestMapping("/order")
+@CrossOrigin
 public class OrderController {
 
-    private List<String> imageExts= Arrays.asList("jpg","jpeg","png");
 
-    @PostMapping("/upload")
-    public String upload(@RequestParam MultipartFile image) throws IOException, ClientException {
-        String originalFilename = image.getOriginalFilename();
-        String[] splits = originalFilename.split("\\.");
-        String ext = splits[splits.length - 1];
-        ext = ext.toLowerCase();
-        //todo judge with content type
-        boolean contains = imageExts.contains(ext);
-        if (!contains){
-            throw new ClientException(ClientExceptionConstant.IMAGE_INVALID_ERRCODE, ClientExceptionConstant.IMAGE_INVALID_ERRMSG);
-        }
-        String uuid = UUID.randomUUID().toString();
-        String filename = String.format("%s.%s", uuid, ext);
-        String filepath = String.format("www/image/%s", filename);
-        try(FileOutputStream out = new FileOutputStream(filepath)){
-            byte[] data = image.getBytes();
-            out.write(data);
-        }
-        return filename;
+    @Autowired
+    private OrderService orderService;
+
+    @GetMapping("/search")
+    public PageOutDTO<OrderListOutDTO> search(OrderSearchInDTO orderSearchInDTO,
+                                              @RequestParam(required = false, defaultValue = "1") Integer pageNum) {
+        Page<OrderListOutDTO> page = orderService.search(pageNum);
+
+        PageOutDTO<OrderListOutDTO> pageOutDTO = new PageOutDTO<>();
+        pageOutDTO.setTotal(page.getTotal());
+        pageOutDTO.setPageSize(page.getPageSize());
+        pageOutDTO.setPageNum(page.getPageNum());
+        pageOutDTO.setList(page);
+
+        return pageOutDTO;
+    }
+
+    @GetMapping("/getById")
+    public OrderShowOutDTO getById(@RequestParam Long orderId) {
+        OrderShowOutDTO orderShowOutDTO = orderService.getById(orderId);
+        return orderShowOutDTO;
+    }
+
+    @GetMapping("/getInvoiceInfo")
+    public OrderInvoiceShowOutDTO getInvoiceInfo(@RequestParam Long orderId) {
+        return null;
+    }
+
+    @GetMapping("/getShipInfo")
+    public OrderShipShowOutDTO getShipInfo(@RequestParam Long orderId) {
+        return null;
     }
 
 }

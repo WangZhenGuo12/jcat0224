@@ -4,9 +4,10 @@ package com.wzg.jcatadminstrationback.dao;
 import com.github.pagehelper.Page;
 import com.wzg.jcatadminstrationback.po.Administrator;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
-
+@Repository
 public interface AdministratorMapper {
 
 

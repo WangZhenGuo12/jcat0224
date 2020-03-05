@@ -1,20 +1,29 @@
 package com.wzg.jcatadminstrationback.dao;
 
 
-import com.wzg.jcatadminstrationback.po.OrderDetail;
 
+import com.wzg.jcatadminstrationback.po.OrderHistory;
+import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+
+
+@Repository
 public interface OrderDetailMapper {
-    int deleteByPrimaryKey(Long orderId);
+    int deleteByPrimaryKey(Long orderHistoryId);
 
-    int insert(OrderDetail record);
+    int insert(OrderHistory record);
 
-    int insertSelective(OrderDetail record);
+    int insertSelective(OrderHistory record);
 
-    OrderDetail selectByPrimaryKey(Long orderId);
+    OrderHistory selectByPrimaryKey(Long orderHistoryId);
 
-    int updateByPrimaryKeySelective(OrderDetail record);
+    int updateByPrimaryKeySelective(OrderHistory record);
 
-    int updateByPrimaryKeyWithBLOBs(OrderDetail record);
+    int updateByPrimaryKey(OrderHistory record);
 
-    int updateByPrimaryKey(OrderDetail record);
+//    custom
+
+    List<OrderHistory> selectByOrderId(@Param("orderId") Long orderId);
 }
