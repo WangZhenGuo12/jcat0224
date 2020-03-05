@@ -9,7 +9,7 @@ import com.wzg.jcatstoreback.dto.in.OrderCheckoutInDTO;
 import com.wzg.jcatstoreback.dto.in.OrderProductInDTO;
 import com.wzg.jcatstoreback.dto.out.OrderHistoryListOutDTO;
 import com.wzg.jcatstoreback.dto.out.OrderShowOutDTO;
-import com.wzg.jcatstoreback.dto.out.ProductShowOutDTO;
+
 import com.wzg.jcatstoreback.enumeration.OrderStatus;
 import com.wzg.jcatstoreback.po.*;
 import com.wzg.jcatstoreback.service.AddressService;
@@ -24,7 +24,6 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
-
 @Service
 public class OrderServiceImpl implements OrderService {
 
@@ -50,7 +49,7 @@ public class OrderServiceImpl implements OrderService {
 
         List<OrderProductInDTO> orderProductInDTOS = orderCheckoutInDTO.getOrderProducts();
         List<OrderProductVO> orderProductVOS = orderProductInDTOS.stream().map(orderProductInDTO -> {
-            ProductShowOutDTO orderProduct = productService.getById(orderProductInDTO.getProductId());
+            Product orderProduct = productService.getById(orderProductInDTO.getProductId());
             OrderProductVO orderProductVO = new OrderProductVO();
             orderProductVO.setProductId(orderProduct.getProductId());
             orderProductVO.setProductCode(orderProduct.getProductCode());
@@ -149,5 +148,4 @@ public class OrderServiceImpl implements OrderService {
 
         return orderShowOutDTO;
     }
-
 }
