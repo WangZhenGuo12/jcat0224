@@ -1,7 +1,6 @@
-package com.wzg.jcatstoreback.constant;
+package io.cjf.jcartstoreback.constant;
 
 public class ClientExceptionConstant {
-
 
     public static final String NOT_SUPPORT_STATIC_RESOURCE_ERRCODE = "0001";
     public static final String NOT_SUPPORT_STATIC_RESOURCE_ERRMSG = "not support static resource";

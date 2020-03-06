@@ -1,7 +1,6 @@
-package com.wzg.jcatstoreback.dto.out;
+package io.cjf.jcartstoreback.dto.out;
 
 public class AddressShowOutDTO {
-
     private Integer addressId;
     private String tag;
     private String receiverName;
@@ -47,5 +46,4 @@ public class AddressShowOutDTO {
     public void setContent(String content) {
         this.content = content;
     }
-
 }

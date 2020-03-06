@@ -1,10 +1,9 @@
-package com.wzg.jcatstoreback.service;
+package io.cjf.jcartstoreback.service;
 
 import com.wzg.jcatstoreback.dto.in.CustomerRegisterInDTO;
 import com.wzg.jcatstoreback.po.Customer;
 
 public interface CustomerService {
-
 
     Integer register(CustomerRegisterInDTO customerRegisterInDTO);
 
@@ -15,6 +14,5 @@ public interface CustomerService {
     Customer getByEmail(String email);
 
     void update(Customer customer);
-
 
 }

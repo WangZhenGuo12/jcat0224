@@ -1,4 +1,4 @@
-package com.wzg.jcatstoreback.dto.in;
+package io.cjf.jcartstoreback.dto.in;
 
 public class CustomerUpdateProfileInDTO {
     private String realName;

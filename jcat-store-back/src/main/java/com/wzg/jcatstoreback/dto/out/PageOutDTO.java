@@ -1,4 +1,4 @@
-package com.wzg.jcatstoreback.dto.out;
+package io.cjf.jcartstoreback.dto.out;
 
 import java.util.List;
 

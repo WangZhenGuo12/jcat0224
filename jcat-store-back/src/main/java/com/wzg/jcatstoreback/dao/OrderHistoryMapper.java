@@ -1,4 +1,4 @@
-package com.wzg.jcatstoreback.dao;
+package io.cjf.jcartstoreback.dao;
 
 import com.wzg.jcatstoreback.po.OrderHistory;
 import org.apache.ibatis.annotations.Param;
@@ -23,4 +23,5 @@ public interface OrderHistoryMapper {
 //    custom
 
     List<OrderHistory> selectByOrderId(@Param("orderId") Long orderId);
+
 }

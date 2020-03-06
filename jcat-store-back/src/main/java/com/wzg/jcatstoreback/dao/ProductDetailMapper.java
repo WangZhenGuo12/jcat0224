@@ -1,5 +1,4 @@
-package com.wzg.jcatstoreback.dao;
-
+package io.cjf.jcartstoreback.dao;
 
 import com.wzg.jcatstoreback.po.ProductDetail;
 import org.springframework.stereotype.Repository;

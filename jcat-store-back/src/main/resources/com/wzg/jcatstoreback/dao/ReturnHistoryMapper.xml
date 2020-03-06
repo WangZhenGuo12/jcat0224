@@ -22,7 +22,7 @@
     delete from jcart_return_history
     where return_history_id = #{returnHistoryId,jdbcType=BIGINT}
   </delete>
-  <insert id="insert" parameterType="io.cjf.jcartstoreback.po.ReturnHistory">
+  <insert id="insert" parameterType="com.wzg.jcatstoreback.po.ReturnHistory">
     insert into jcart_return_history (return_history_id, return_id, time, 
       return_status, comment, customer_notified
       )
@@ -103,4 +103,13 @@
       customer_notified = #{customerNotified,jdbcType=BIT}
     where return_history_id = #{returnHistoryId,jdbcType=BIGINT}
   </update>
+
+<!--  custom-->
+  <select id="selectByReturnId" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from jcart_return_history
+    where return_id = #{returnId}
+    order by `time` desc
+  </select>
 </mapper>

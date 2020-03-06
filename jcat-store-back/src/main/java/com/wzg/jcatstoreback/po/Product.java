@@ -1,8 +1,6 @@
-package com.wzg.jcatstoreback.po;
+package io.cjf.jcartstoreback.po;
 
 public class Product {
-
-
     private Integer productId;
 
     private String productCode;
@@ -112,5 +110,4 @@ public class Product {
     public void setSortOrder(Integer sortOrder) {
         this.sortOrder = sortOrder;
     }
-
 }

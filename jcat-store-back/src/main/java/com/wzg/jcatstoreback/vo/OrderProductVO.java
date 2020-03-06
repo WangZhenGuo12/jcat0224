@@ -1,7 +1,6 @@
-package com.wzg.jcatstoreback.vo;
+package io.cjf.jcartstoreback.vo;
 
 public class OrderProductVO {
-
     private Integer productId;
     private String productCode;
     private String productName;

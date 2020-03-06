@@ -1,10 +1,9 @@
-package com.wzg.jcatstoreback.dto.out;
+package io.cjf.jcartstoreback.dto.out;
 
 public class OrderListOutDTO {
-
     private Long orderId;
-    //  todo add order list total products
-   //   private Integer totalProducts;
+    //todo add order list total products
+//    private Integer totalProducts;
     private Byte status;
     private Double totalPrice;
     private Long createTimestamp;
@@ -40,5 +39,4 @@ public class OrderListOutDTO {
     public void setCreateTimestamp(Long createTimestamp) {
         this.createTimestamp = createTimestamp;
     }
-
 }

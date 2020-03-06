@@ -1,10 +1,9 @@
-package com.wzg.jcatstoreback.dao;
+package io.cjf.jcartstoreback.dao;
 
 import com.github.pagehelper.Page;
 import com.wzg.jcatstoreback.po.Order;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
-
 
 @Repository
 public interface OrderMapper {
@@ -21,4 +20,5 @@ public interface OrderMapper {
     int updateByPrimaryKey(Order record);
 
     Page<Order> selectByCustomerId(@Param("customerId") Integer customerId);
+
 }

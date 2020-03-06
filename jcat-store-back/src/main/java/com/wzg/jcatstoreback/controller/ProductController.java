@@ -1,7 +1,6 @@
-package com.wzg.jcatstoreback.controller;
+package io.cjf.jcartstoreback.controller;
 
 import com.github.pagehelper.Page;
-
 import com.wzg.jcatstoreback.dto.in.ProductSearchInDTO;
 import com.wzg.jcatstoreback.dto.out.PageOutDTO;
 import com.wzg.jcatstoreback.dto.out.ProductListOutDTO;
@@ -33,7 +32,7 @@ public class ProductController {
 
     @GetMapping("/getById")
     public ProductShowOutDTO getById(@RequestParam Integer productId){
-        ProductShowOutDTO productShowOutDTO = productService.getById(productId);
+        ProductShowOutDTO productShowOutDTO = productService.getShowById(productId);
         return productShowOutDTO;
     }
 

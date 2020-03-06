@@ -1,4 +1,4 @@
-package com.wzg.jcatstoreback.dto.in;
+package io.cjf.jcartstoreback.dto.in;
 
 import java.util.List;
 
@@ -57,6 +57,4 @@ public class OrderCheckoutInDTO {
     public void setInvoiceAddressId(Integer invoiceAddressId) {
         this.invoiceAddressId = invoiceAddressId;
     }
-
-
 }

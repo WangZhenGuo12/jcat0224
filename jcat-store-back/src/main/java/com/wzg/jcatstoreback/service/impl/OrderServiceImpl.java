@@ -1,22 +1,21 @@
-package com.wzg.jcatstoreback.service.impl;
+package io.cjf.jcartstoreback.service.impl;
 
 import com.alibaba.fastjson.JSON;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
-import com.wzg.jcatstoreback.dao.OrderDetailMapper;
-import com.wzg.jcatstoreback.dao.OrderMapper;
-import com.wzg.jcatstoreback.dto.in.OrderCheckoutInDTO;
-import com.wzg.jcatstoreback.dto.in.OrderProductInDTO;
-import com.wzg.jcatstoreback.dto.out.OrderHistoryListOutDTO;
-import com.wzg.jcatstoreback.dto.out.OrderShowOutDTO;
-
-import com.wzg.jcatstoreback.enumeration.OrderStatus;
-import com.wzg.jcatstoreback.po.*;
-import com.wzg.jcatstoreback.service.AddressService;
-import com.wzg.jcatstoreback.service.OrderHistoryService;
-import com.wzg.jcatstoreback.service.OrderService;
-import com.wzg.jcatstoreback.service.ProductService;
-import com.wzg.jcatstoreback.vo.OrderProductVO;
+import io.cjf.jcartstoreback.dao.OrderDetailMapper;
+import io.cjf.jcartstoreback.dao.OrderMapper;
+import io.cjf.jcartstoreback.dto.in.OrderCheckoutInDTO;
+import io.cjf.jcartstoreback.dto.in.OrderProductInDTO;
+import io.cjf.jcartstoreback.dto.out.OrderHistoryListOutDTO;
+import io.cjf.jcartstoreback.dto.out.OrderShowOutDTO;
+import io.cjf.jcartstoreback.enumeration.OrderStatus;
+import io.cjf.jcartstoreback.po.*;
+import io.cjf.jcartstoreback.service.AddressService;
+import io.cjf.jcartstoreback.service.OrderHistoryService;
+import io.cjf.jcartstoreback.service.OrderService;
+import io.cjf.jcartstoreback.service.ProductService;
+import io.cjf.jcartstoreback.vo.OrderProductVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -24,6 +23,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
+
 @Service
 public class OrderServiceImpl implements OrderService {
 
@@ -45,7 +45,7 @@ public class OrderServiceImpl implements OrderService {
     @Override
     @Transactional
     public Long checkout(OrderCheckoutInDTO orderCheckoutInDTO,
-                         Integer customerId) {
+                            Integer customerId) {
 
         List<OrderProductInDTO> orderProductInDTOS = orderCheckoutInDTO.getOrderProducts();
         List<OrderProductVO> orderProductVOS = orderProductInDTOS.stream().map(orderProductInDTO -> {

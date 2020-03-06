@@ -1,15 +1,15 @@
-package com.wzg.jcatstoreback.service.impl;
+package io.cjf.jcartstoreback.service.impl;
 
-import com.wzg.jcatstoreback.dao.OrderHistoryMapper;
-import com.wzg.jcatstoreback.po.OrderHistory;
-import com.wzg.jcatstoreback.service.OrderHistoryService;
+import io.cjf.jcartstoreback.dao.OrderHistoryMapper;
+import io.cjf.jcartstoreback.po.OrderHistory;
+import io.cjf.jcartstoreback.service.OrderHistoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+
 @Service
 public class OrderHistoryServiceImpl implements OrderHistoryService {
-
 
     @Autowired
     private OrderHistoryMapper orderHistoryMapper;
@@ -19,7 +19,4 @@ public class OrderHistoryServiceImpl implements OrderHistoryService {
         List<OrderHistory> orderHistories = orderHistoryMapper.selectByOrderId(orderId);
         return orderHistories;
     }
-
-
-
 }

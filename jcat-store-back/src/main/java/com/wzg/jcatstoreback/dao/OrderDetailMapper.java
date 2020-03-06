@@ -1,8 +1,9 @@
-package com.wzg.jcatstoreback.dao;
+package io.cjf.jcartstoreback.dao;
 
 import com.wzg.jcatstoreback.po.OrderDetail;
+import org.springframework.stereotype.Repository;
 
-
+@Repository
 public interface OrderDetailMapper {
     int deleteByPrimaryKey(Long orderId);
 

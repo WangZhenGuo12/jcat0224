@@ -1,4 +1,4 @@
-package com.wzg.jcatstoreback;
+package io.cjf.jcartstoreback;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
@@ -6,10 +6,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 @MapperScan("com.wzg.jcatstoreback.dao")
-public class JcatStoreBackApplication {
+public class JcartStoreBackApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(JcatStoreBackApplication.class, args);
+        SpringApplication.run(JcartStoreBackApplication.class, args);
     }
 
 }

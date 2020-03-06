@@ -1,4 +1,4 @@
-package com.wzg.jcatstoreback.po;
+package io.cjf.jcartstoreback.po;
 
 public class ProductDetail {
     private Integer productId;

@@ -1,7 +1,6 @@
-package com.wzg.jcatstoreback.dto.out;
+package io.cjf.jcartstoreback.dto.out;
 
 public class CustomerLoginOutDTO {
-
     private String token;
     private Long expireTimestamp;
 

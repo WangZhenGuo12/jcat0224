@@ -1,18 +1,18 @@
-package com.wzg.jcatstoreback.controller;
+package io.cjf.jcartstoreback.controller;
 
 import at.favre.lib.crypto.bcrypt.BCrypt;
 import com.wzg.jcatstoreback.constant.ClientExceptionConstant;
+import com.wzg.jcatstoreback.dto.in.*;
+import com.wzg.jcatstoreback.dto.out.CustomerGetProfileOutDTO;
 import com.wzg.jcatstoreback.dto.out.CustomerLoginOutDTO;
 import com.wzg.jcatstoreback.exception.ClientException;
 import com.wzg.jcatstoreback.po.Customer;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.mail.SimpleMailMessage;
-import org.springframework.mail.javamail.JavaMailSender;
-import com.wzg.jcatstoreback.dto.in.*;
-import com.wzg.jcatstoreback.dto.out.CustomerGetProfileOutDTO;
 import com.wzg.jcatstoreback.service.CustomerService;
 import com.wzg.jcatstoreback.util.JWTUtil;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.mail.SimpleMailMessage;
+import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.web.bind.annotation.*;
 
 import javax.xml.bind.DatatypeConverter;
@@ -128,7 +128,6 @@ public class CustomerController {
     public void resetPwd(@RequestBody CustomerResetPwdInDTO customerResetPwdInDTO){
 
     }
-
 
 
 

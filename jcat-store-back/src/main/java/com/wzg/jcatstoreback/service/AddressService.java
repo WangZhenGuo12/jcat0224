@@ -1,4 +1,4 @@
-package com.wzg.jcatstoreback.service;
+package io.cjf.jcartstoreback.service;
 
 import com.wzg.jcatstoreback.po.Address;
 
@@ -15,4 +15,5 @@ public interface AddressService {
     void update(Address address);
 
     void delete(Integer addressId);
+
 }

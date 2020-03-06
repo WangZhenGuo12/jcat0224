@@ -1,4 +1,4 @@
-package com.wzg.jcatstoreback.bean;
+package io.cjf.jcartstoreback.bean;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -12,6 +12,5 @@ public class BeanConfig {
     public SecureRandom secureRandom(){
         return new SecureRandom();
     }
-
 
 }

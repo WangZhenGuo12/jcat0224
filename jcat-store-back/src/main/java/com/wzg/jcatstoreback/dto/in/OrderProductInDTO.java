@@ -1,10 +1,8 @@
-package com.wzg.jcatstoreback.dto.in;
+package io.cjf.jcartstoreback.dto.in;
 
 public class OrderProductInDTO {
     private Integer productId;
     private Integer quantity;
-
-
 
     public Integer getProductId() {
         return productId;

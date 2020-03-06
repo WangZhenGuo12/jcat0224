@@ -1,9 +1,10 @@
-package com.wzg.jcatstoreback.dao;
+package io.cjf.jcartstoreback.dao;
 
 import com.wzg.jcatstoreback.po.Customer;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 
-
+@Repository
 public interface CustomerMapper {
     int deleteByPrimaryKey(Integer customerId);
 
@@ -17,10 +18,10 @@ public interface CustomerMapper {
 
     int updateByPrimaryKey(Customer record);
 
-
+//    custom
 
     Customer selectByUsername(@Param("username") String username);
 
     Customer selectByEmail(@Param("email") String email);
-
+    
 }

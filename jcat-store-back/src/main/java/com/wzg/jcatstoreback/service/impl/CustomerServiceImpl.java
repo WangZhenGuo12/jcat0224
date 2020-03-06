@@ -1,17 +1,18 @@
-package com.wzg.jcatstoreback.service.impl;
+package io.cjf.jcartstoreback.service.impl;
 
 import at.favre.lib.crypto.bcrypt.BCrypt;
-import com.wzg.jcatstoreback.dao.CustomerMapper;
-import com.wzg.jcatstoreback.dto.in.CustomerRegisterInDTO;
-import com.wzg.jcatstoreback.enumeration.CustomerStatus;
-import com.wzg.jcatstoreback.po.Customer;
-import com.wzg.jcatstoreback.service.CustomerService;
+import io.cjf.jcartstoreback.enumeration.CustomerStatus;
+import io.cjf.jcartstoreback.dao.CustomerMapper;
+import io.cjf.jcartstoreback.dto.in.CustomerRegisterInDTO;
+import io.cjf.jcartstoreback.po.Customer;
+import io.cjf.jcartstoreback.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
+
 @Service
-public class CustomerServiceImpl implements CustomerService  {
+public class CustomerServiceImpl implements CustomerService {
 
     @Autowired
     private CustomerMapper customerMapper;
@@ -63,6 +64,4 @@ public class CustomerServiceImpl implements CustomerService  {
     public void update(Customer customer) {
         customerMapper.updateByPrimaryKeySelective(customer);
     }
-
-
 }

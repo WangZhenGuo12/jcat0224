@@ -1,9 +1,8 @@
-package com.wzg.jcatstoreback.dao;
+package io.cjf.jcartstoreback.dao;
 
 import com.github.pagehelper.Page;
 import com.wzg.jcatstoreback.dto.out.ProductListOutDTO;
 import com.wzg.jcatstoreback.po.Product;
-
 import org.springframework.stereotype.Repository;
 
 @Repository

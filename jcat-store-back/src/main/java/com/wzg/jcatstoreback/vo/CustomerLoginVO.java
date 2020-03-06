@@ -1,4 +1,4 @@
-package com.wzg.jcatstoreback.vo;
+package io.cjf.jcartstoreback.vo;
 
 public class CustomerLoginVO {
     private Integer customerId;

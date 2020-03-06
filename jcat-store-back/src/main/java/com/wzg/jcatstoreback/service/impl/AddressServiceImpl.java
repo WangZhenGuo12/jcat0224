@@ -1,17 +1,15 @@
-package com.wzg.jcatstoreback.service.impl;
+package io.cjf.jcartstoreback.service.impl;
 
-import com.wzg.jcatstoreback.dao.AddressMapper;
-import com.wzg.jcatstoreback.po.Address;
-import com.wzg.jcatstoreback.service.AddressService;
+import io.cjf.jcartstoreback.dao.AddressMapper;
+import io.cjf.jcartstoreback.po.Address;
+import io.cjf.jcartstoreback.service.AddressService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-
 @Service
 public class AddressServiceImpl implements AddressService {
-
 
     @Autowired
     private AddressMapper addressMapper;

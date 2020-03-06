@@ -1,9 +1,8 @@
-package com.wzg.jcatstoreback.controller;
+package io.cjf.jcartstoreback.controller;
 
 import com.wzg.jcatstoreback.dto.in.AddressCreateInDTO;
 import com.wzg.jcatstoreback.dto.in.AddressUpdateInDTO;
 import com.wzg.jcatstoreback.dto.out.AddressListOutDTO;
-
 import com.wzg.jcatstoreback.dto.out.AddressShowOutDTO;
 import com.wzg.jcatstoreback.po.Address;
 import com.wzg.jcatstoreback.service.AddressService;
@@ -17,7 +16,6 @@ import java.util.stream.Collectors;
 @RequestMapping("/address")
 @CrossOrigin
 public class AddressController {
-
 
     @Autowired
     private AddressService addressService;
@@ -82,4 +80,5 @@ public class AddressController {
     public void delete(@RequestBody Integer addressId){
         addressService.delete(addressId);
     }
+
 }
