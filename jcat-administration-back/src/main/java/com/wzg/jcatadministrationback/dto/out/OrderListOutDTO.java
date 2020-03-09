@@ -1,10 +1,13 @@
-package io.cjf.jcartadministrationback.dto.out;
+package com.wzg.jcatadministrationback.dto.out;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import java.util.Date;
 
 public class OrderListOutDTO {
+
+
+
     private Long orderId;
     private Integer customerId;
     private String customerName;

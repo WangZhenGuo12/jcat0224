@@ -1,8 +1,10 @@
-package io.cjf.jcartadministrationback.dto.out;
+package com.wzg.jcatadministrationback.dto.out;
 
 import java.util.List;
 
 public class PageOutDTO<T> {
+
+
     private Long total;
     private Integer pageSize;
     private Integer pageNum;

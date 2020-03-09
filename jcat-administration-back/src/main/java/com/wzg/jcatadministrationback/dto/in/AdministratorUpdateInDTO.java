@@ -1,6 +1,8 @@
-package io.cjf.jcartadministrationback.dto.in;
+package com.wzg.jcatadministrationback.dto.in;
 
 public class AdministratorUpdateInDTO {
+
+
     private Integer administratorId;
     private String realName;
     private String password;

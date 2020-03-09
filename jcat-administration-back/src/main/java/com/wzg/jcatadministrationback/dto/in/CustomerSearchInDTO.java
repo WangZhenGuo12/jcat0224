@@ -1,6 +1,7 @@
-package io.cjf.jcartadministrationback.dto.in;
+package com.wzg.jcatadministrationback.dto.in;
 
 public class CustomerSearchInDTO {
+
     private String username;
     private String realName;
     private String mobile;

@@ -1,9 +1,10 @@
-package io.cjf.jcartadministrationback.service;
+package com.wzg.jcatadministrationback.service;
 
 import com.github.pagehelper.Page;
-import io.cjf.jcartadministrationback.dto.out.OrderListOutDTO;
-import io.cjf.jcartadministrationback.dto.out.OrderShowOutDTO;
-import io.cjf.jcartadministrationback.po.Order;
+import com.wzg.jcatadministrationback.dto.out.OrderListOutDTO;
+import com.wzg.jcatadministrationback.dto.out.OrderShowOutDTO;
+import com.wzg.jcatadministrationback.po.Order;
+
 
 public interface OrderService {
 

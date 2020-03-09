@@ -1,4 +1,4 @@
-package io.cjf.jcartadministrationback.po;
+package com.wzg.jcatadministrationback .po;
 
 import java.util.Date;
 

@@ -1,4 +1,4 @@
-package io.cjf.jcartadministrationback.controller;
+package com.wzg.jcatadministrationback.controller;
 
 import com.github.pagehelper.Page;
 import com.wzg.jcatadministrationback.dto.in.CustomerSearchInDTO;

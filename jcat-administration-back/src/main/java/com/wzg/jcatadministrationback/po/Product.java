@@ -1,4 +1,4 @@
-package io.cjf.jcartadministrationback.po;
+package com.wzg.jcatadministrationback.po;
 
 public class Product {
     private Integer productId;

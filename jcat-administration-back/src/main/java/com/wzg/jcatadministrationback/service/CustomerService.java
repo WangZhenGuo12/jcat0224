@@ -1,8 +1,10 @@
-package io.cjf.jcartadministrationback.service;
+package com.wzg.jcatadministrationback.service;
 
 import com.github.pagehelper.Page;
-import io.cjf.jcartadministrationback.dto.in.CustomerSetStatusInDTO;
-import io.cjf.jcartadministrationback.po.Customer;
+import com.wzg.jcatadministrationback.dto.in.CustomerSetStatusInDTO;
+import com.wzg.jcatadministrationback.po.Customer;
+
+
 
 public interface CustomerService {
 

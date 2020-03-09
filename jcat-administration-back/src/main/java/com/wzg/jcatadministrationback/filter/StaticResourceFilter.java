@@ -1,4 +1,4 @@
-package io.cjf.jcartadministrationback.filter;
+package com.wzg.jcatadministrationback.filter;
 
 import com.wzg.jcatadministrationback.constant.ClientExceptionConstant;
 import com.wzg.jcatadministrationback.exception.ClientException;

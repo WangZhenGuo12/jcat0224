@@ -1,4 +1,4 @@
-package io.cjf.jcartadministrationback.po;
+package com.wzg.jcatadministrationback.po;
 
 public class OrderDetail {
     private Long orderId;

@@ -1,8 +1,8 @@
-package io.cjf.jcartadministrationback.dao;
+package com.wzg.jcatadministrationback.dao;
 
 import com.github.pagehelper.Page;
-import io.cjf.jcartadministrationback.po.Administrator;
-import org.apache.catalina.LifecycleState;
+import com.wzg.jcatadministrationback.po.Administrator;
+
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 

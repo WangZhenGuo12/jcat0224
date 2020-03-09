@@ -1,10 +1,10 @@
-package io.cjf.jcartadministrationback;
+package com.wzg.jcatadministrationback;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class JcartAdministrationBackApplicationTests {
+class JcatAdministrationBackApplicationTests {
 
     @Test
     void contextLoads() {

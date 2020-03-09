@@ -1,17 +1,17 @@
-package io.cjf.jcartadministrationback.service.impl;
+package com.wzg.jcatadministrationback.service.impl;
 
 import com.alibaba.fastjson.JSON;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
-import io.cjf.jcartadministrationback.dao.ProductDetailMapper;
-import io.cjf.jcartadministrationback.dao.ProductMapper;
-import io.cjf.jcartadministrationback.dto.in.ProductCreateInDTO;
-import io.cjf.jcartadministrationback.dto.in.ProductUpdateInDTO;
-import io.cjf.jcartadministrationback.dto.out.ProductListOutDTO;
-import io.cjf.jcartadministrationback.dto.out.ProductShowOutDTO;
-import io.cjf.jcartadministrationback.po.Product;
-import io.cjf.jcartadministrationback.po.ProductDetail;
-import io.cjf.jcartadministrationback.service.ProductService;
+import com.wzg.jcatadministrationback.dao.ProductDetailMapper;
+import com.wzg.jcatadministrationback.dao.ProductMapper;
+import com.wzg.jcatadministrationback.dto.in.ProductCreateInDTO;
+import com.wzg.jcatadministrationback.dto.in.ProductUpdateInDTO;
+import com.wzg.jcatadministrationback.dto.out.ProductListOutDTO;
+import com.wzg.jcatadministrationback.dto.out.ProductShowOutDTO;
+import com.wzg.jcatadministrationback.po.Product;
+import com.wzg.jcatadministrationback.po.ProductDetail;
+import com.wzg.jcatadministrationback.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

@@ -1,8 +1,8 @@
-package io.cjf.jcartadministrationback.dao;
+package com.wzg.jcatadministrationback.dao;
 
 import com.github.pagehelper.Page;
-import io.cjf.jcartadministrationback.dto.out.OrderListOutDTO;
-import io.cjf.jcartadministrationback.po.Order;
+import com.wzg.jcatadministrationback.dto.out.OrderListOutDTO;
+import com.wzg.jcatadministrationback.po.Order;
 import org.springframework.stereotype.Repository;
 
 @Repository

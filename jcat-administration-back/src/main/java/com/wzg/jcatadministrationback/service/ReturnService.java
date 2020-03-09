@@ -1,7 +1,8 @@
-package io.cjf.jcartadministrationback.service;
+package com.wzg.jcatadministrationback.service;
 
 import com.github.pagehelper.Page;
-import io.cjf.jcartadministrationback.po.Return;
+import com.wzg.jcatadministrationback.po.Return;
+
 
 public interface ReturnService {
 

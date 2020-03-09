@@ -1,7 +1,7 @@
-package io.cjf.jcartadministrationback.dao;
+package com.wzg.jcatadministrationback.dao;
 
 import com.github.pagehelper.Page;
-import io.cjf.jcartadministrationback.po.Return;
+import com.wzg.jcatadministrationback.po.Return;
 import org.springframework.stereotype.Repository;
 
 @Repository

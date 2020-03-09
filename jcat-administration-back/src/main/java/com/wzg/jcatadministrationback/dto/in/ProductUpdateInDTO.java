@@ -1,9 +1,11 @@
-package io.cjf.jcartadministrationback.dto.in;
+package com.wzg.jcatadministrationback.dto.in;
 
 import java.util.List;
 
 
 public class ProductUpdateInDTO {
+
+
     private Integer productId;
     private String productName;
     private Double price;

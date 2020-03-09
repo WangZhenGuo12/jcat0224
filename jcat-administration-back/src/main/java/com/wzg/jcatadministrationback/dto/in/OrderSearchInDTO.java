@@ -1,6 +1,8 @@
-package io.cjf.jcartadministrationback.dto.in;
+package com.wzg.jcatadministrationback.dto.in;
 
 public class OrderSearchInDTO {
+
+
     private Long orderId;
     private String customerName;
     private Byte status;

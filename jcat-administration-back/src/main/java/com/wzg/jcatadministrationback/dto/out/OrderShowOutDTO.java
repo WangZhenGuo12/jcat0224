@@ -1,10 +1,12 @@
-package io.cjf.jcartadministrationback.dto.out;
+package com.wzg.jcatadministrationback.dto.out;
 
-import io.cjf.jcartadministrationback.vo.OrderProductVO;
+import com.wzg.jcatadministrationback.vo.OrderProductVO;
 
 import java.util.List;
 
 public class OrderShowOutDTO {
+
+
     private Long orderId;
     private Integer customerId;
     private String customerName;

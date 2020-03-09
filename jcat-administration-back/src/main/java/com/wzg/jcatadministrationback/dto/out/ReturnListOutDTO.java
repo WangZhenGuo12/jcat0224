@@ -1,6 +1,8 @@
-package io.cjf.jcartadministrationback.dto.out;
+package com.wzg.jcatadministrationback.dto.out;
 
 public class ReturnListOutDTO {
+
+
     private Integer returnId;
     private Long orderId;
     private Integer customerId;

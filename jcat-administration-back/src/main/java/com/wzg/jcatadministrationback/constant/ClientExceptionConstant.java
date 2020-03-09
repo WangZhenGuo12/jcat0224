@@ -1,4 +1,4 @@
-package io.cjf.jcartadministrationback.constant;
+package com.wzg.jcatadministrationback.constant;
 
 public class ClientExceptionConstant {
     public static final String NOT_SUPPORT_STATIC_RESOURCE_ERRCODE = "0001";

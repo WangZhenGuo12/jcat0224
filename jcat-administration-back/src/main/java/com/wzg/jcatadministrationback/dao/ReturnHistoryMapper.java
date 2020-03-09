@@ -1,6 +1,6 @@
-package io.cjf.jcartadministrationback.dao;
+package com.wzg.jcatadministrationback.dao;
 
-import io.cjf.jcartadministrationback.po.ReturnHistory;
+import com.wzg.jcatadministrationback.po.ReturnHistory;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 

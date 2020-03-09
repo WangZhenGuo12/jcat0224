@@ -1,6 +1,8 @@
-package io.cjf.jcartadministrationback.dto.in;
+package com.wzg.jcatadministrationback.dto.in;
 
 public class AdministratorUpdateProfileInDTO {
+
+
     private String realName;
     private String email;
     private String avatarUrl;

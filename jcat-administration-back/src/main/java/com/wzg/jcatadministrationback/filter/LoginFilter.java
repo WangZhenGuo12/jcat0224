@@ -1,10 +1,10 @@
-package io.cjf.jcartadministrationback.filter;
+package com.wzg.jcatadministrationback.filter;
 
 import com.auth0.jwt.exceptions.JWTVerificationException;
-import io.cjf.jcartadministrationback.constant.ClientExceptionConstant;
-import io.cjf.jcartadministrationback.exception.ClientException;
-import io.cjf.jcartadministrationback.util.JWTUtil;
-import io.cjf.jcartadministrationback.vo.AdministratorLoginVO;
+import com.wzg.jcatadministrationback.constant.ClientExceptionConstant;
+import com.wzg.jcatadministrationback.exception.ClientException;
+import com.wzg.jcatadministrationback.util.JWTUtil;
+import com.wzg.jcatadministrationback.vo.AdministratorLoginVO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -59,7 +59,8 @@ public class LoginFilter implements Filter {
 
         AdministratorLoginVO administratorLoginVO = null;
         try {
-            administratorLoginVO = jwtUtil.verifyToken(token);
+//            administratorLoginVO = jwtUtil.verifyToken(token);
+          //  administratorLoginVO = jwtUtil.verifyToken(token);
         }catch (JWTVerificationException ex){
             throw new ClientException(ClientExceptionConstant.TOKEN_INVALID_ERRCODE, ex.getMessage());
         }

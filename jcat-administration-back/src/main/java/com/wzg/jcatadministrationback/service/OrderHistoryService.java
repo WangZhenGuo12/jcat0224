@@ -1,6 +1,6 @@
-package io.cjf.jcartadministrationback.service;
+package com.wzg.jcatadministrationback.service;
 
-import io.cjf.jcartadministrationback.po.OrderHistory;
+import com.wzg.jcatadministrationback.po.OrderHistory;
 
 import java.util.List;
 

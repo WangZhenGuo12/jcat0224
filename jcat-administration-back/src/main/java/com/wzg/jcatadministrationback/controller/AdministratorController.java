@@ -1,15 +1,16 @@
-package io.cjf.jcartadministrationback.controller;
+package com.wzg.jcatadministrationback.controller;
 
 import at.favre.lib.crypto.bcrypt.BCrypt;
 import com.github.pagehelper.Page;
-import io.cjf.jcartadministrationback.constant.ClientExceptionConstant;
-import io.cjf.jcartadministrationback.dto.in.*;
-import io.cjf.jcartadministrationback.dto.out.*;
-import io.cjf.jcartadministrationback.enumeration.AdministratorStatus;
-import io.cjf.jcartadministrationback.exception.ClientException;
-import io.cjf.jcartadministrationback.po.Administrator;
-import io.cjf.jcartadministrationback.service.AdministratorService;
-import io.cjf.jcartadministrationback.util.JWTUtil;
+
+import com.wzg.jcatadministrationback.constant.ClientExceptionConstant;
+import com.wzg.jcatadministrationback.dto.in.*;
+import com.wzg.jcatadministrationback.dto.out.*;
+import com.wzg.jcatadministrationback.enumeration.AdministratorStatus;
+import com.wzg.jcatadministrationback.exception.ClientException;
+import com.wzg.jcatadministrationback.po.Administrator;
+import com.wzg.jcatadministrationback.service.AdministratorService;
+import com.wzg.jcatadministrationback.util.JWTUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

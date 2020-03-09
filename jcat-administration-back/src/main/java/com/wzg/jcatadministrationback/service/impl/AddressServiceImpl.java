@@ -1,8 +1,8 @@
-package io.cjf.jcartadministrationback.service.impl;
+package com.wzg.jcatadministrationback.service.impl;
 
-import io.cjf.jcartadministrationback.dao.AddressMapper;
-import io.cjf.jcartadministrationback.po.Address;
-import io.cjf.jcartadministrationback.service.AddressService;
+import com.wzg.jcatadministrationback.dao.AddressMapper;
+import com.wzg.jcatadministrationback.po.Address;
+import com.wzg.jcatadministrationback.service.AddressService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,6 +1,7 @@
-package io.cjf.jcartadministrationback.dao;
+package com.wzg.jcatadministrationback.dao;
 
-import io.cjf.jcartadministrationback.po.OrderDetail;
+import com.wzg.jcatadministrationback.po.OrderDetail;
+
 import org.springframework.stereotype.Repository;
 
 @Repository
@@ -15,7 +16,7 @@ public interface OrderDetailMapper {
 
     int updateByPrimaryKeySelective(OrderDetail record);
 
-    int updateByPrimaryKeyWithBLOBs(OrderDetail record);
+
 
     int updateByPrimaryKey(OrderDetail record);
 }

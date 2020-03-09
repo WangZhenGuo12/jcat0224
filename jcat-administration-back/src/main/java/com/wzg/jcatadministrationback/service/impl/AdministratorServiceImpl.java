@@ -1,10 +1,10 @@
-package io.cjf.jcartadministrationback.service.impl;
+package com.wzg.jcatadministrationback.service.impl;
 
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
-import io.cjf.jcartadministrationback.dao.AdministratorMapper;
-import io.cjf.jcartadministrationback.po.Administrator;
-import io.cjf.jcartadministrationback.service.AdministratorService;
+import com.wzg.jcatadministrationback.dao.AdministratorMapper;
+import com.wzg.jcatadministrationback.po.Administrator;
+import com.wzg.jcatadministrationback.service.AdministratorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

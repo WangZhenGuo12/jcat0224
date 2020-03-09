@@ -1,7 +1,8 @@
-package io.cjf.jcartadministrationback.service;
+package com.wzg.jcatadministrationback.service;
 
 import com.github.pagehelper.Page;
-import io.cjf.jcartadministrationback.po.Administrator;
+import com.wzg.jcatadministrationback.po.Administrator;
+
 
 import java.util.List;
 

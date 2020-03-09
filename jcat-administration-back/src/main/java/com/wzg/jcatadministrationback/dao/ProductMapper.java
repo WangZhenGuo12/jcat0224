@@ -1,8 +1,8 @@
-package io.cjf.jcartadministrationback.dao;
+package com.wzg.jcatadministrationback.dao;
 
 import com.github.pagehelper.Page;
-import io.cjf.jcartadministrationback.dto.out.ProductListOutDTO;
-import io.cjf.jcartadministrationback.po.Product;
+import com.wzg.jcatadministrationback.dto.out.ProductListOutDTO;
+import com.wzg.jcatadministrationback.po.Product;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 

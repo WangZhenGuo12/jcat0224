@@ -1,6 +1,9 @@
-package io.cjf.jcartadministrationback.dto.in;
+package com.wzg.jcatadministrationback.dto.in;
 
 public class AdministratorChangePwdInDTO {
+
+
+
     private String originPwd;
     private String newPwd;
 

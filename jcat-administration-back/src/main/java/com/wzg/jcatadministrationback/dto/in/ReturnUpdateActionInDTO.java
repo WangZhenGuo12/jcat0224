@@ -1,6 +1,8 @@
-package io.cjf.jcartadministrationback.dto.in;
+package com.wzg.jcatadministrationback.dto.in;
 
 public class ReturnUpdateActionInDTO {
+
+
     private Integer returnId;
     private Byte action;
 

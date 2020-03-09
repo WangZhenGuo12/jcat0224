@@ -1,6 +1,8 @@
-package io.cjf.jcartadministrationback.dto.in;
+package com.wzg.jcatadministrationback.dto.in;
 
 public class OrderHistoryCreateInDTO {
+
+
     private Long orderId;
     private Byte orderStatus;
     private String comment;

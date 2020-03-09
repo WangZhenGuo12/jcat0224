@@ -1,10 +1,11 @@
-package io.cjf.jcartadministrationback.service;
+package com.wzg.jcatadministrationback.service;
 
 import com.github.pagehelper.Page;
-import io.cjf.jcartadministrationback.dto.in.ProductCreateInDTO;
-import io.cjf.jcartadministrationback.dto.in.ProductUpdateInDTO;
-import io.cjf.jcartadministrationback.dto.out.ProductListOutDTO;
-import io.cjf.jcartadministrationback.dto.out.ProductShowOutDTO;
+import com.wzg.jcatadministrationback.dto.in.ProductCreateInDTO;
+import com.wzg.jcatadministrationback.dto.in.ProductUpdateInDTO;
+import com.wzg.jcatadministrationback.dto.out.ProductListOutDTO;
+import com.wzg.jcatadministrationback.dto.out.ProductShowOutDTO;
+
 
 import java.util.List;
 

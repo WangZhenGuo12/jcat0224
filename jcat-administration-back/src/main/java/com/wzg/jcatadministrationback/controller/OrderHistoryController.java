@@ -1,4 +1,4 @@
-package io.cjf.jcartadministrationback.controller;
+package com.wzg.jcatadministrationback.controller;
 
 import com.wzg.jcatadministrationback.dto.in.OrderHistoryCreateInDTO;
 import com.wzg.jcatadministrationback.dto.out.OrderHistoryListOutDTO;

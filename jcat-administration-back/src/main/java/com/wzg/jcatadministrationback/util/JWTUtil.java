@@ -1,12 +1,13 @@
-package io.cjf.jcartadministrationback.util;
+package com.wzg.jcatadministrationback.util;
 
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.interfaces.DecodedJWT;
 import com.auth0.jwt.interfaces.JWTVerifier;
-import io.cjf.jcartadministrationback.dto.out.AdministratorLoginOutDTO;
-import io.cjf.jcartadministrationback.po.Administrator;
-import io.cjf.jcartadministrationback.vo.AdministratorLoginVO;
+
+import com.wzg.jcatadministrationback.dto.out.AdministratorLoginOutDTO;
+import com.wzg.jcatadministrationback.po.Administrator;
+import com.wzg.jcatadministrationback.vo.AdministratorLoginVO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;

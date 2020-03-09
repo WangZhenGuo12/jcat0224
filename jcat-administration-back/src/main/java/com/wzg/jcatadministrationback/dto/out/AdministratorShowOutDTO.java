@@ -1,4 +1,4 @@
-package io.cjf.jcartadministrationback.dto.out;
+package com.wzg.jcatadministrationback.dto.out;
 
 public class AdministratorShowOutDTO {
     private Integer administratorId;

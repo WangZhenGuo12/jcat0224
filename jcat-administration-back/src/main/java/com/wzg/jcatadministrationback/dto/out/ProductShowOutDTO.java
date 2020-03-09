@@ -1,8 +1,10 @@
-package io.cjf.jcartadministrationback.dto.out;
+package com.wzg.jcatadministrationback.dto.out;
 
 import java.util.List;
 
 public class ProductShowOutDTO {
+
+
     private Integer productId;
     private String productCode;
     private String productName;
