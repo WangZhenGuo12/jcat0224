@@ -1,4 +1,4 @@
-package io.cjf.jcartstoreback.controller;
+package com.wzg.jcatstoreback.controller;
 
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

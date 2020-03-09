@@ -1,8 +1,8 @@
-package io.cjf.jcartstoreback.service.impl;
+package com.wzg.jcatstoreback.service.impl;
 
-import io.cjf.jcartstoreback.dao.OrderHistoryMapper;
-import io.cjf.jcartstoreback.po.OrderHistory;
-import io.cjf.jcartstoreback.service.OrderHistoryService;
+import com.wzg.jcatstoreback.dao.OrderHistoryMapper;
+import com.wzg.jcatstoreback.po.OrderHistory;
+import com.wzg.jcatstoreback.service.OrderHistoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

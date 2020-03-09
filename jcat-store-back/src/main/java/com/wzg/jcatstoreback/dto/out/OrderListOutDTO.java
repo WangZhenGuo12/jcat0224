@@ -1,9 +1,9 @@
-package io.cjf.jcartstoreback.dto.out;
+package com.wzg.jcatstoreback.dto.out;
 
 public class OrderListOutDTO {
     private Long orderId;
     //todo add order list total products
-//    private Integer totalProducts;
+    //private Integer totalProducts;
     private Byte status;
     private Double totalPrice;
     private Long createTimestamp;

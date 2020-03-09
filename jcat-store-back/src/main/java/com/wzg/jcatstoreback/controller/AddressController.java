@@ -1,4 +1,4 @@
-package io.cjf.jcartstoreback.controller;
+package com.wzg.jcatstoreback.controller;
 
 import com.wzg.jcatstoreback.dto.in.AddressCreateInDTO;
 import com.wzg.jcatstoreback.dto.in.AddressUpdateInDTO;

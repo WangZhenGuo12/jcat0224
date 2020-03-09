@@ -1,4 +1,4 @@
-package io.cjf.jcartstoreback.util;
+package com.wzg.jcatstoreback.util;
 
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;

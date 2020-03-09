@@ -1,4 +1,4 @@
-package io.cjf.jcartstoreback.dto.out;
+package com.wzg.jcatstoreback.dto.out;
 
 public class ReturnHistoryListOutDTO {
     private Long timestamp;

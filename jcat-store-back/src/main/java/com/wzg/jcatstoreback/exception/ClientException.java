@@ -1,4 +1,4 @@
-package io.cjf.jcartstoreback.exception;
+package com.wzg.jcatstoreback.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

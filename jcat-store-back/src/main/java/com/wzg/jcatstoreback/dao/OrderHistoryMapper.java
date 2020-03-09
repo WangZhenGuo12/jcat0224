@@ -1,4 +1,4 @@
-package io.cjf.jcartstoreback.dao;
+package com.wzg.jcatstoreback.dao;
 
 import com.wzg.jcatstoreback.po.OrderHistory;
 import org.apache.ibatis.annotations.Param;

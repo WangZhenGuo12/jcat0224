@@ -1,4 +1,4 @@
-package io.cjf.jcartstoreback.filter;
+package com.wzg.jcatstoreback.filter;
 
 import com.wzg.jcatstoreback.constant.ClientExceptionConstant;
 import com.wzg.jcatstoreback.exception.ClientException;

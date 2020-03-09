@@ -1,4 +1,4 @@
-package io.cjf.jcartstoreback.filter;
+package com.wzg.jcatstoreback.filter;
 
 import com.auth0.jwt.exceptions.JWTVerificationException;
 import com.wzg.jcatstoreback.constant.ClientExceptionConstant;

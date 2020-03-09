@@ -1,4 +1,4 @@
-package io.cjf.jcartstoreback.dto.in;
+package com.wzg.jcatstoreback.dto.in;
 
 import java.util.List;
 

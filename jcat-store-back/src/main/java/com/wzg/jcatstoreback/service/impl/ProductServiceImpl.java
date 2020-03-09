@@ -1,15 +1,16 @@
-package io.cjf.jcartstoreback.service.impl;
+package com.wzg.jcatstoreback.service.impl;
 
 import com.alibaba.fastjson.JSON;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
-import io.cjf.jcartstoreback.dao.ProductDetailMapper;
-import io.cjf.jcartstoreback.dao.ProductMapper;
-import io.cjf.jcartstoreback.dto.out.ProductListOutDTO;
-import io.cjf.jcartstoreback.dto.out.ProductShowOutDTO;
-import io.cjf.jcartstoreback.po.Product;
-import io.cjf.jcartstoreback.po.ProductDetail;
-import io.cjf.jcartstoreback.service.ProductService;
+
+import com.wzg.jcatstoreback.dao.ProductDetailMapper;
+import com.wzg.jcatstoreback.dao.ProductMapper;
+import com.wzg.jcatstoreback.dto.out.ProductListOutDTO;
+import com.wzg.jcatstoreback.dto.out.ProductShowOutDTO;
+import com.wzg.jcatstoreback.po.Product;
+import com.wzg.jcatstoreback.po.ProductDetail;
+import com.wzg.jcatstoreback.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

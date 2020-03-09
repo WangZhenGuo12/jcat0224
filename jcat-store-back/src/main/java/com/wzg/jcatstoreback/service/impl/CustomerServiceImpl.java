@@ -1,11 +1,12 @@
-package io.cjf.jcartstoreback.service.impl;
+package com.wzg.jcatstoreback.service.impl;
 
 import at.favre.lib.crypto.bcrypt.BCrypt;
-import io.cjf.jcartstoreback.enumeration.CustomerStatus;
-import io.cjf.jcartstoreback.dao.CustomerMapper;
-import io.cjf.jcartstoreback.dto.in.CustomerRegisterInDTO;
-import io.cjf.jcartstoreback.po.Customer;
-import io.cjf.jcartstoreback.service.CustomerService;
+
+import com.wzg.jcatstoreback.dao.CustomerMapper;
+import com.wzg.jcatstoreback.dto.in.CustomerRegisterInDTO;
+import com.wzg.jcatstoreback.enumeration.CustomerStatus;
+import com.wzg.jcatstoreback.po.Customer;
+import com.wzg.jcatstoreback.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

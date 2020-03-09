@@ -1,4 +1,4 @@
-package io.cjf.jcartstoreback.dao;
+package com.wzg.jcatstoreback.dao;
 
 import com.github.pagehelper.Page;
 import com.wzg.jcatstoreback.po.Order;

@@ -1,4 +1,4 @@
-package io.cjf.jcartstoreback.bean;
+package com.wzg.jcatstoreback.bean;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
